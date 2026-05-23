@@ -1,0 +1,6 @@
+{
+  "name": "CodeGear Developer Portfolio",
+  "description": "A premium full-stack developer portfolio for CodeGear featuring glassmorphism elements, Lenis smooth scrolling, Framer Motion animations, interactive timeline, projects filtering, and a custom server-side Gemini AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
