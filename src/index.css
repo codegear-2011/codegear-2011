@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom CSS Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(5, 5, 5, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.5);
+}
+
+/* Glassmorphism Presets */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+}
+
+.dark .glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-heavy {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08);
+}
+
+.dark .glass-panel-heavy {
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+.glass-interactive {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-interactive:hover {
+  background: rgba(255, 255, 255, 0.65);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.08);
+}
+
+.dark .glass-interactive:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(99, 102, 241, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.1);
+}
+
+/* Base Body smooth adjustment */
+body {
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Background Gradients */
+.glow-orb {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.25;
+  mix-blend-mode: screen;
+  z-index: 0;
+  transition: all 1s ease;
+}
+
+.dark .glow-orb {
+  opacity: 0.18;
+}
+
+/* Pulse animation for AI elements */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.pulse-ai {
+  animation: softPulse 3s infinite ease-in-out;
+}
