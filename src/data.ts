@@ -120,26 +120,11 @@ export const SKILLS: Skill[] = [
   { name: "React 19 & Next.js", category: "Frontend", level: 95, yearsOfExperience: 5 },
   { name: "TypeScript", category: "Frontend", level: 98, yearsOfExperience: 5 },
   { name: "Tailwind CSS", category: "Frontend", level: 95, yearsOfExperience: 5 },
-  { name: "Framer Motion / Motion", category: "Frontend", level: 90, yearsOfExperience: 4 },
-  { name: "D3.js / SVG Canvas", category: "Frontend", level: 85, yearsOfExperience: 3 },
   
   // Backend
-  { name: "Express & Node.js", category: "Backend", level: 94, yearsOfExperience: 5 },
   { name: "Python / FastAPI", category: "Backend", level: 85, yearsOfExperience: 3 },
   { name: "PostgreSQL & Prisma", category: "Backend", level: 88, yearsOfExperience: 4 },
-  { name: "Redis Caching", category: "Backend", level: 85, yearsOfExperience: 3 },
   
-  // DevOps & Tools
-  { name: "Docker & Cloud Run", category: "DevOps & Tools", level: 90, yearsOfExperience: 4 },
-  { name: "CI/CD (GitHub Actions)", category: "DevOps & Tools", level: 88, yearsOfExperience: 4 },
-  { name: "AWS & GCP", category: "DevOps & Tools", level: 85, yearsOfExperience: 3 },
-  { name: "Git Engine Core", category: "DevOps & Tools", level: 92, yearsOfExperience: 5 },
-  
-  // AI & Data
-  { name: "Multi-Agent System Pipelines", category: "AI & Data", level: 92, yearsOfExperience: 2 },
-  { name: "Gemini SDK Integration (@google/genai)", category: "AI & Data", level: 95, yearsOfExperience: 2 },
-  { name: "RAG & Vector Embeddings", category: "AI & Data", level: 88, yearsOfExperience: 2 },
-  { name: "LLM Fine-Tuning & Prompt Tuning", category: "AI & Data", level: 90, yearsOfExperience: 2 }
 ];
 
 export const EVENTS: TimelineEvent[] = [
