@@ -31,7 +31,7 @@ export interface TimelineEvent {
 }
 
 export const PORTFOLIO_OWNER = {
-  name: "CodeGear",
+  name: "Arin Dutta",
   title: "Lead Full-Stack Engineer & AI Solution Integrator",
   tagline: "Engineering highly conversational AI pipelines, immersive React architectures, and hyper-scalable Node.js orchestration layers.",
   about: "I am a full-stack architect dedicated to crafting high-performance, aesthetically exceptional web applications. With a focus on type safety, smooth interactive animations, and server-side state optimization, I bridge the gap between elegant UI design and robust systems engineering.",
